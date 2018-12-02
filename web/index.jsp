@@ -149,7 +149,7 @@
                   </div>
                   <div class="mr-5">Alumnos</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="alumnos/insertar.jsp">
+                <a class="card-footer text-white clearfix small z-1" href="alumno/insertar.jsp">
                   <span class="float-left">Agregar Alumno</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right fa-user-edit"></i>
@@ -165,7 +165,7 @@
                   </div>
                   <div class="mr-5">Alumnos</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="alumnos?action=consultar">
+                <a class="card-footer text-white clearfix small z-1" href="alumno?action=consultar">
                   <span class="float-left">Ver listado de Alumnos</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right fa-user-edit"></i>

@@ -39,6 +39,10 @@
         <servlet-name>CatedraticoServlet</servlet-name>
         <servlet-class>controlador.CatedraticoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AlumnoServlet</servlet-name>
+        <servlet-class>controlador.AlumnoServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RolServlet</servlet-name>
         <url-pattern>/rol</url-pattern>
@@ -74,6 +78,10 @@
     <servlet-mapping>
         <servlet-name>CatedraticoServlet</servlet-name>
         <url-pattern>/catedratico</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AlumnoServlet</servlet-name>
+        <url-pattern>/alumno</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
