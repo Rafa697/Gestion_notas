@@ -70,10 +70,10 @@ public class NotaPruebaIntermediaServlet extends HttpServlet {
         } else {
             msg = "Error al ingresar";
         }
-        RequestDispatcher rd;
+       
         request.setAttribute("msg", msg);
-        rd = request.getRequestDispatcher("NotaPruebaIntermedia/insertar.jsp");
-        rd.forward(request, response);
+         request.getRequestDispatcher("NotaPruebaIntermedia/insertar.jsp").forward(request, response);
+          request.getRequestDispatcher("catedratico/NotaPruebaIntermedia/insertar.jsp").forward(request, response);
     }
 
     private void consultar(HttpServletRequest request, HttpServletResponse response)
@@ -83,7 +83,7 @@ public class NotaPruebaIntermediaServlet extends HttpServlet {
         List<NotaPIBean> lista = npid.consultar();
 
         request.setAttribute("listar", lista);
-        request.getRequestDispatcher("NotaPruebaIntermedia/datos.jsp");
+        request.getRequestDispatcher("NotaPruebaIntermedia/datos.jsp").forward(request, response);
         request.getRequestDispatcher("catedratico/NotaPruebaIntermedia/datos.jsp").forward(request, response);
         System.out.println(lista);
 

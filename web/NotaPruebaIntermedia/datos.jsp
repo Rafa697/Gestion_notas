@@ -10,13 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <title>Notas Pruebas Intermedias</title>
     </head>
     <body>
         <div class="container">
             <form action="notaPI?action=insertar" method="POST"> 
                 <h1> Notas Pruebas Intermedias </h1>
-                <a class="btn btn-dark btn-light" href="../index.jsp" >↩ Volver a inicio</a>
+                <a class="btn btn-dark btn-light" href="index.jsp" >↩ Volver a inicio</a>
                 <a class="btn btn-success " href="NotaPruebaIntermedia/insertar.jsp">➕ Nuevo</a>
                 </br>
                 </br>
