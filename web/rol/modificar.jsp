@@ -25,7 +25,7 @@
                     <c:forEach items="${listar}" var="ver">
                     
                         <label for="label">ID</label>
-                        <input class="form-control" type="text" name="id_rol" value="${ver.id_rol}" >
+                        <input class="form-control" type="text" name="id_rol" value="${ver.id_rol}" readonly="" >
                         <label for="label">ROL</label>
                         <input class="form-control" type="text" name="rol" value="${ver.rol}">
                   </c:forEach>

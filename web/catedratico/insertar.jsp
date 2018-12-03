@@ -29,7 +29,7 @@
             <label for="nombre">ID Catedratico</label>
             <input class="form-control " name="id_catedratico" required="">
             <label for="nombre">ID Persona</label>
-             <select name="id_persona">
+            <select name="id_persona" class="form-control">
             <%
             Conexion cn = new Conexion();
             try {

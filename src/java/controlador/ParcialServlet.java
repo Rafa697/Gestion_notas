@@ -66,10 +66,10 @@ public class ParcialServlet extends HttpServlet {
         } else {
             msg = "Error al ingresar";
         }
-        RequestDispatcher rd;
+       
         request.setAttribute("msg", msg);
-        rd = request.getRequestDispatcher("Parcial/insertar.jsp");
-        rd.forward(request, response);
+       request.getRequestDispatcher("Parcial/insertar.jsp").forward(request, response);
+       request.getRequestDispatcher("catedratico/Parcial/insertar.jsp").forward(request, response);
     }
 
     private void consultar(HttpServletRequest request, HttpServletResponse response)
@@ -79,8 +79,8 @@ public class ParcialServlet extends HttpServlet {
         List<ParcialBean> lista = pard.consultar();
 
         request.setAttribute("listar", lista);
-        request.getRequestDispatcher("Parcial/datos.jsp");
-                 request.getRequestDispatcher("catedratico/Parcial/datos.jsp").forward(request, response);
+        request.getRequestDispatcher("Parcial/datos.jsp").forward(request, response);
+        request.getRequestDispatcher("catedratico/Parcial/datos.jsp").forward(request, response);
         System.out.println(lista);
 
     }
@@ -103,6 +103,7 @@ public class ParcialServlet extends HttpServlet {
         request.setAttribute("msg", msg);
         request.setAttribute("listar", lista);
         request.getRequestDispatcher("Parcial/datos.jsp").forward(request, response);
+        request.getRequestDispatcher("catedratico/Parcial/datos.jsp").forward(request, response);
 
     }
 
@@ -115,6 +116,7 @@ public class ParcialServlet extends HttpServlet {
 
         request.setAttribute("listar", listar);
         request.getRequestDispatcher("Parcial/modificar.jsp").forward(request, response);
+        request.getRequestDispatcher("catedratico/Parcial/modificar.jsp").forward(request, response);
 
     }
 
@@ -127,6 +129,7 @@ public class ParcialServlet extends HttpServlet {
         List<ParcialBean> listar = pard.consultarById(id_parcial);
         request.setAttribute("listar", listar);
         request.getRequestDispatcher("Parcial/modificar.jsp").forward(request, response);
+        request.getRequestDispatcher("catedratico/Parcial/modificar.jsp").forward(request, response);
     }
 
     protected void actualizar(HttpServletRequest request, HttpServletResponse response)
@@ -148,9 +151,9 @@ public class ParcialServlet extends HttpServlet {
         List<ParcialBean> listar = pard.consultar();
         request.setAttribute("msg", msj);
         request.setAttribute("listar", listar);
-        RequestDispatcher rd;
-        rd = request.getRequestDispatcher("Parcial/datos.jsp");
-        rd.forward(request, response);
+       
+        request.getRequestDispatcher("Parcial/datos.jsp").forward(request, response);
+         request.getRequestDispatcher("Parcial/datos.jsp").forward(request, response);
     }
 
     @Override

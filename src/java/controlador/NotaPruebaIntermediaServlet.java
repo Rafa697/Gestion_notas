@@ -85,6 +85,7 @@ public class NotaPruebaIntermediaServlet extends HttpServlet {
         request.setAttribute("listar", lista);
         request.getRequestDispatcher("NotaPruebaIntermedia/datos.jsp").forward(request, response);
         request.getRequestDispatcher("catedratico/NotaPruebaIntermedia/datos.jsp").forward(request, response);
+        request.getRequestDispatcher("alumno/NotaPruebaIntermedia/datos.jsp").forward(request, response);
         System.out.println(lista);
 
     }
@@ -107,6 +108,7 @@ public class NotaPruebaIntermediaServlet extends HttpServlet {
         request.setAttribute("msg", msg);
         request.setAttribute("listar", lista);
         request.getRequestDispatcher("NotaPruebaIntermedia/datos.jsp").forward(request, response);
+        request.getRequestDispatcher("catedratico/NotaPruebaIntermedia/datos.jsp").forward(request, response);
 
     }
 
@@ -119,6 +121,7 @@ public class NotaPruebaIntermediaServlet extends HttpServlet {
 
         request.setAttribute("listar", listar);
         request.getRequestDispatcher("NotaPruebaIntermedia/modificar.jsp").forward(request, response);
+        request.getRequestDispatcher("catedratico/NotaPruebaIntermedia/modificar.jsp").forward(request, response);
 
     }
 
@@ -131,6 +134,7 @@ public class NotaPruebaIntermediaServlet extends HttpServlet {
         List<NotaPIBean> listar = npid.consultarById(id_notapi);
         request.setAttribute("listar", listar);
         request.getRequestDispatcher("NotaPruebaIntermedia/modificar.jsp").forward(request, response);
+        request.getRequestDispatcher("catedratico/NotaPruebaIntermedia/modificar.jsp").forward(request, response);
     }
 
     protected void actualizar(HttpServletRequest request, HttpServletResponse response)
@@ -154,9 +158,8 @@ public class NotaPruebaIntermediaServlet extends HttpServlet {
         List<NotaPIBean> listar = npid.consultar();
         request.setAttribute("msg", msj);
         request.setAttribute("listar", listar);
-        RequestDispatcher rd;
-        rd = request.getRequestDispatcher("NotaPruebaIntermedia/datos.jsp");
-        rd.forward(request, response);
+       request.getRequestDispatcher("NotaPruebaIntermedia/datos.jsp").forward(request, response);
+       request.getRequestDispatcher("catedratico/NotaPruebaIntermedia/datos.jsp").forward(request, response);
     }
     
     @Override

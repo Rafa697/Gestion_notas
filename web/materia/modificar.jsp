@@ -30,7 +30,7 @@
                         <label for="label">Materia</label>
                         <input class="form-control" type="text" name="materia" value="${ver.materia}">
                         <label for="label">Id Catedratico</label>
-                       <select name="id_catedratico">
+                        <select name="id_catedratico" class="form-control" >
             <%
             Conexion cn = new Conexion();
             try {

@@ -269,14 +269,14 @@
               </div>
             </div>
             <div class="col-xl-3 col-sm-6 mb-3">
-              <div class="card text-dark bg-info o-hidden h-100">
+              <div class="card text-white bg-info o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
                     <i class="fas fa-fw fa-ruler-combined"></i>
                   </div>
                   <div class="mr-5">Materias</div>
                 </div>
-                <a class="card-footer text-dark clearfix small z-1" href="materia?action=consultar">
+                <a class="card-footer text-white clearfix small z-1" href="materia?action=consultar">
                   <span class="float-left">Ver listado de Materias</span>
                   <span class="float-right">
                     <i class="fas fa-ruler-vertical"></i>

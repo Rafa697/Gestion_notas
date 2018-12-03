@@ -78,7 +78,7 @@
                   </div>
                   <div class="mr-5">Notas  Prueba Intermedia</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="notasPI?action=consultar">
+                <a class="card-footer text-white clearfix small z-1" href="notaPI?action=consultar">
                   <span class="float-left">Ver listado de Notas PI</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right fa-folder-open"></i>

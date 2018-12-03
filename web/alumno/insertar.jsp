@@ -29,7 +29,7 @@
             <label for="nombre">ID Alumno</label>
             <input class="form-control " name="id_alumno" required="">
             <label for="nombre">ID Persona</label>
-             <select name="id_persona">
+            <select name="id_persona" class="form-control">
             <%
             Conexion cn = new Conexion();
             try {
@@ -46,7 +46,7 @@
             %>
              </select><br>
             <label for="nombre">ID Carrera</label>
-            <select name="id_carrera">
+            <select name="id_carrera" class="form-control">
             <%
              cn = new Conexion();
             try {
